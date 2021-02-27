@@ -1,0 +1,74 @@
+body {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  background: white url('blocks/wallpaper1.jpg') right top no-repeat fixed;
+}
+* {
+	transition: 0.2s ease-in-out; 
+	user-select: none;
+}
+button:focus {outline: none;}
+
+.main-block {
+	background: rgba(255, 255, 255, 0.20);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.main-content {
+	width: 320px;
+	background: transparent;
+	border: 2px solid transparent;
+	color: white;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+
+	position: relative;
+	top: 200px;
+}
+
+.slots-block {
+	border: 2px solid #333333;
+	background: #333333;
+	border-radius: 8px;
+	padding: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	box-shadow: 0px 8px 14px #666666;	
+}
+
+.slots-block div {
+	width: 80px;
+	border-radius: 8px;
+	text-align: center;
+	padding: 4px;
+	font-size: 30pt;
+	background: white;
+}
+
+#again-btn {
+	font-family: 'Montserrat', sans-serif;
+	width: 150px;
+	text-align: center;
+	border: 2px solid #333333;
+	border-radius: 7px;
+	background: #333333;
+	color: white;
+	letter-spacing: 2px;
+	padding: 6px;
+	font-size: 20pt;
+	transform: translateY(0px);
+
+	box-shadow: 0px 8px 14px #666666;
+}
+#again-btn:hover {letter-spacing: 3px;}
+#again-btn:active {transform: translateY(10px);}
+
+
